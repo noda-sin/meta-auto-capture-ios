@@ -1,0 +1,16 @@
+name: MetaAutoCapture
+options:
+  bundleIdPrefix: com.nodasin
+targets:
+  MetaAutoCapture:
+    type: application
+    platform: iOS
+    deploymentTarget: "17.0"
+    sources: [MetaAutoCapture]
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.nodasin.MetaAutoCapture
+        SWIFT_VERSION: 5.10
+        INFOPLIST_KEY_NSCameraUsageDescription: "Camera frames are analyzed on-device to find memorable moments."
+        INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription: "Best shots are saved to your photo library."
+        GENERATE_INFOPLIST_FILE: YES
